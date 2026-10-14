@@ -8,6 +8,17 @@
     "url": "https://allsvgicons.com"
   },
   "homepage": "https://allsvgicons.com/mcp/",
+  "repository": "https://github.com/TheTechBasket/allsvgicons-skills",
   "license": "MIT",
-  "keywords": ["icons", "svg", "logos", "brand-logos", "lucide", "material-design", "tabler", "heroicons", "mcp"]
+  "keywords": [
+    "icons",
+    "svg",
+    "logos",
+    "brand-logos",
+    "lucide",
+    "material-design",
+    "tabler",
+    "heroicons",
+    "mcp"
+  ]
 }

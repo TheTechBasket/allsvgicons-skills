@@ -9,10 +9,10 @@ Use the allsvgicons MCP tools to put real, open-source SVG icons into code. Neve
 
 ## Flow
 
-1. `search_icons(query, prefix?, limit?)`: describe the icon by intent ("shopping cart outline", "settings gear"). Pass `prefix` to stay inside one set, for example `lucide` or `tabler`.
-2. `get_icon(name)`: fetch the SVG for one `prefix:name` from the search results. Paste that markup as is.
+1. `search_icons(query, prefix?, limit?, picker?)`: describe the icon by intent ("shopping cart outline", "settings gear"). Pass `prefix` to stay inside one set, for example `lucide` or `tabler`. `limit` is 1 to 20. Pass `picker: false` for searches the user does not need to see as an icon grid.
+2. `get_icon(name)`: fetch the SVG for one `prefix:name` from the search results. Paste that markup as is. Icons over 32 KB (some emoji and flags) come back as a size and a URL instead of markup: download the file from that URL.
 3. `find_brand_logo(brand)`: for company or product logos. Returns every version (color, mono, wordmark) and the brand's official hex color.
-4. `list_collections(offset?, limit?)`: list the sets with prefix, name and icon count, when the user asks what is available or wants to pick a set.
+4. `list_collections()`: list every set, grouped by category, with prefix, name and icon count, when the user asks what is available or wants to pick a set. Call it once per conversation and reuse the result.
 
 ## Rules
 
@@ -20,7 +20,7 @@ Use the allsvgicons MCP tools to put real, open-source SVG icons into code. Neve
 - Use only names that a tool returned. If `get_icon` reports a missing icon, search again. Do not guess a name or fabricate markup.
 - Keep `currentColor` in the SVG so the icon follows the text color, unless the user asks for a fixed color. For brand logos, use the hex color from `find_brand_logo`.
 - Add an accessible name where the icon carries meaning (`aria-label` or a visible label), and `aria-hidden="true"` where it is decoration.
-- Fetch only the icons you will use. Each tool call counts toward the daily limit on the free plan.
+- Fetch only the icons you will use. The free plan allows 20 calls a day (`list_collections` does not count); Pro lifts the cap. To save many icons as files, download `https://i.allsvgicons.com/<prefix>/<name>.svg` directly instead of calling `get_icon` for each.
 
 ## When the tools are missing
 
