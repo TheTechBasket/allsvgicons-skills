@@ -1,5 +1,6 @@
 {
   "name": "allsvgicons",
+  "displayName": "All SVG Icons",
   "version": "1.0.0",
   "description": "Search and fetch free SVG icons and brand logos, ready to paste into HTML, React, Vue, Svelte or a design file.",
   "author": {
@@ -9,6 +10,9 @@
   },
   "homepage": "https://allsvgicons.com/mcp/",
   "privacyPolicyUrl": "https://allsvgicons.com/privacy/",
+  "termsOfServiceUrl": "https://allsvgicons.com/terms/",
+  "supportUrl": "https://allsvgicons.com/contact/",
+  "documentationUrl": "https://allsvgicons.com/mcp/#setup",
   "repository": "https://github.com/TheTechBasket/allsvgicons-skills",
   "license": "MIT",
   "keywords": [
