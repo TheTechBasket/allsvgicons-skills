@@ -1,0 +1,19 @@
+{
+  "name": "allsvgicons",
+  "owner": {
+    "name": "All SVG Icons",
+    "email": "hi@allsvgicons.com"
+  },
+  "metadata": {
+    "description": "Free SVG icons and brand logos for Claude: 379,000+ icons from 230+ open-source icon sets."
+  },
+  "plugins": [
+    {
+      "name": "allsvgicons",
+      "source": "./plugins/allsvgicons",
+      "description": "Search and fetch free SVG icons and brand logos, ready to paste into HTML, React, Vue, Svelte or a design file.",
+      "category": "development",
+      "homepage": "https://allsvgicons.com/mcp/"
+    }
+  ]
+}

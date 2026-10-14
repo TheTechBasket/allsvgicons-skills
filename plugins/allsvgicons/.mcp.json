@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "allsvgicons": {
+      "type": "http",
+      "url": "https://i.allsvgicons.com/mcp"
+    }
+  }
+}

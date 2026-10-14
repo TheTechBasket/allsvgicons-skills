@@ -1,0 +1,13 @@
+{
+  "name": "allsvgicons",
+  "version": "1.0.0",
+  "description": "Search and fetch free SVG icons and brand logos, ready to paste into HTML, React, Vue, Svelte or a design file.",
+  "author": {
+    "name": "All SVG Icons",
+    "email": "hi@allsvgicons.com",
+    "url": "https://allsvgicons.com"
+  },
+  "homepage": "https://allsvgicons.com/mcp/",
+  "license": "MIT",
+  "keywords": ["icons", "svg", "logos", "brand-logos", "lucide", "material-design", "tabler", "heroicons", "mcp"]
+}
